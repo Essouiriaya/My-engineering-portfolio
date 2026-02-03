@@ -12,6 +12,7 @@ interface ProjectCardProps { title: string; problem: string; desc: string; tech:
 interface ExperienceCardProps { title: string; company: string; domain: string; desc: string; tech: string; website?: string }
 interface EducationCardProps { degree: string; institution: string; specialization?: string; year?: string; projects?: string[] }
 
+
 export default function Portfolio() {
   return (
     <div className="flex min-h-screen font-sans bg-[#0b1120] text-white">
@@ -43,7 +44,7 @@ export default function Portfolio() {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="mt-6 text-xl md:text-1xl text-slate-300 max-w-3xl z-10">
             Digital Transformation & AI Engineering Student | Full-Stack Developer | 
-            Focused on Intelligent Systems, IoT & Data-Driven Applications
+            Interested in Intelligent Systems, IoT, and Data-Driven Applications
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -74,7 +75,8 @@ export default function Portfolio() {
           <p className="text-slate-300 leading-relaxed max-w-4xl mx-auto mb-6">
             In addition to technical skills, I excel in <strong className="text-cyan-400">problem-solving</strong>, 
             <strong className="text-cyan-400">team collaboration</strong>, <strong className="text-cyan-400">autonomy</strong>, 
-            <strong className="text-cyan-400">curiosity</strong>, and professional communication. I am passionate about applying technology 
+            <strong className="text-cyan-400">curiosity</strong>, and <strong className="text-cyan-400">professional communication</strong>. 
+            I am passionate about applying technology 
             to real-world challenges and creating innovative solutions that drive digital transformation.
           </p>
           <p className="text-slate-300 leading-relaxed max-w-4xl mx-auto">
@@ -87,7 +89,7 @@ export default function Portfolio() {
             <h2 className="text-3xl font-bold mb-12 text-center">Skills</h2>
             <div className="grid md:grid-cols-3 gap-6">
               <SkillCard icon={<Code />} title="Programming" skills="Java, Python, PHP, C, SQL" />
-              <SkillCard icon={<Layers />} title="Frontend" skills="HTML, CSS, JS, Angular, React, Tailwind, Bootstrap" />
+              <SkillCard icon={<Layers />} title="Frontend" skills="HTML, CSS, JS, Angular, Tailwind, Bootstrap" />
               <SkillCard icon={<Briefcase />} title="Backend" skills="Spring Boot, Flask, FastAPI, Laravel, REST APIs" />
               <SkillCard icon={<Brain />} title="AI & Data" skills="Machine Learning, Deep Learning, NLP, Pandas, Scikit-learn" />
               <SkillCard icon={<Database />} title="Databases" skills="MySQL, PostgreSQL, MongoDB, SQLAlchemy" />
@@ -101,6 +103,7 @@ export default function Portfolio() {
           <h2 className="text-3xl font-bold mb-12 text-center">Selected Projects</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <ProjectCard title="Smart Home IoT Dashboard" problem="Lack of real-time IoT monitoring and control" desc="Cloud-based IoT system with real-time sensor simulation, data streaming, and bidirectional control." tech="Python, Flask, MQTT, Angular" github="https://github.com/Essouiriaya/SmartHome-IoT.git" />
+            <ProjectCard title="Digitalization of Final Year Project Management (Odoo 16)" problem="Manual and scattered management of final year projects" desc="Complete Odoo 16 module that centralizes PFE data (students, supervisors, projects, companies) and automates the main steps of the PFE lifecycle." tech="Odoo 16, Python, XML, PostgreSQL" github="https://github.com/Essouiriaya/GestionPFE.git" />
             <ProjectCard title="HomeLyo – Home Services Platform" problem="Manual and inefficient management of home services" desc="Full-stack platform for booking and managing home services with secure REST APIs and admin dashboard." tech="Spring Boot, Angular, MySQL"/>
             <ProjectCard title="TASKLY – Project Management Tool" problem="Poor collaboration and project tracking" desc="Collaborative web tool for task and team management using MVC architecture." tech="Laravel, Bootstrap" github="https://github.com/Essouiriaya/TasklyApp.git" />
             <ProjectCard title="PomoNote" problem="Need for efficient daily task management and focus optimization" desc="All-in-one productivity app with note-taking, intelligent to-do list, and Pomodoro timer." tech="Python (PySide6 GUI), Python backend, MySQL, SQLAlchemy, PyMySQL, XAMPP" github="https://github.com/Essouiriaya/PomoNoteApp.git" />
@@ -166,7 +169,7 @@ export default function Portfolio() {
         </section>
 
 
-        <footer className="text-center text-slate-500 py-6 text-sm">© {new Date().getFullYear()} Aya Essouiri — Premium Engineering Portfolio</footer>
+        <footer className="text-center text-slate-500 py-6 text-sm">© {new Date().getFullYear()} Aya Essouiri — My engineering portfolio</footer>
 
       </main>
     </div>
