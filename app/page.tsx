@@ -122,7 +122,7 @@ export default function Portfolio() {
               website="https://www.enaf.ma/"
             />
             <ExperienceCard
-              title="Full Stack Developer"
+              title="Full Stack Developer Intern"
               company="OSM S.A.R.L (Rabat)"
               domain="Home Services Application"
               desc="Worked on the full development of a home services application, including designing the 
